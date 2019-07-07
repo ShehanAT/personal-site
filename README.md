@@ -1,4 +1,4 @@
-# Personal Site made in React.js
+# Personal Site made using React.js
 
 
 
