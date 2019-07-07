@@ -1,0 +1,193 @@
+
+/*  For laptop/desktop screen sizes
+
+--------------------------
+*/
+@import url("./fontawesome/css/fontawesome.min.css");
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* iframe is used to display a website within a webpage */
+html, body, div, span, object iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, 
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark ,audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: none;
+    
+}
+
+
+
+.row {
+    width: 100%;
+    max-width: 1020px;
+    /* max-width prevents the content from becoming larger than the max-width */
+    margin: 0 auto;
+    overflow: auto;
+    /* margin: top right bottom left */
+}
+
+.row:before,
+.row:after { 
+    content: " ";
+    display: table;
+}
+
+.row.after {
+    clear: both;
+}
+
+
+
+.row .row { 
+    /* targeting all .row element inside a .row element   */
+   /* .row.row would target all elements which have both clases */
+    width: auto;
+    max-width: none;
+    margin: 0 -20px;
+    /*margin: top right bottom left */
+}
+
+.column, .columns {
+    position: relative;
+    padding: 0 20px;
+    min-height: 1px;
+    float: left;
+}
+
+.row.collapsed > .column, /*applys to element with column class that are DIRECT children(meaning no middleman element) */
+.row.collapsed > .columns, 
+.column.collapsed, .columns.collapsed { 
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* column widths */
+.row .one       { width: 8.33333%; }
+.row .two       { width: 16.66667%; }
+.row .three     { width: 25%; }
+.row .four      { width: 33.33333%; }
+.row .five      { width: 41.66667%; }
+.row .six       { width: 50%; }
+.row .seven     { width: 58.33333%; }
+.row .eight     { width: 66.66667%; }
+.row .nine      { width: 75%; }
+.row .ten       { width: 83.33333% }
+.row .eleven    { width: 91.66667%; }
+.row .twelve    { width: 100%; }
+.row .thirteen       { width: 108.33333%; }
+.row .fourteen       { width: 116.66667%; }
+.row .fifteen     { width: 125%; }
+.row .sixteen      { width: 133.33333%; }
+.row .seventeen      { width: 141.66667%; }
+.row .eighteen       { width: 150%; }
+.row .nineteen     { width: 158.33333%; }
+.row .twenty     { width: 166.66667%; }
+.row .twenty-one      { width: 175%; }
+.row .twenty-two       { width: 183.33333% }
+.row .twenty-three    { width: 191.66667%; }
+.row .twenty-four   { width: 200%; }
+
+.row .offset-1       { width: 8.33333%; }
+.row .offset-2       { width: 16.66667%; }
+.row .offset-3     { width: 25%; }
+.row .offset-4      { width: 33.33333%; }
+.row .offset-5      { width: 41.66667%; }
+.row .offset-6       { width: 50%; }
+.row .offset-7     { width: 58.33333%; }
+.row .offset-8     { width: 66.66667%; }
+.row .offset-9      { width: 75%; }
+.row .offset-10       { width: 83.33333% }
+.row .offset-11    { width: 91.66667%; }
+.row .offset-12    { width: 100%; }
+
+.row .push-1        { left: 8.33333%; }
+.row .pull-1        { right: 8.33333%; }
+.row .push-2        { left: 16.66667%; }
+.row .pull-2        { right: 16.66667%; }
+.row .push-3        { left: 25%; }
+.row .pull-3        { right: 25%; }
+.row .push-4        { left: 33.33333%; }
+.row .pull-4        { right: 33.33333%; }
+.row .push-5        { left: 41.66667%; }
+.row .pull-5        { right: 41.66667%; }
+.row .push-6        { left: 50%; }
+.row .pull-6        { right: 50%; }
+.row .push-7        { left: 58.33333%; }
+.row .pull-7        { right: 58.33333%; }
+.row .push-8        { left: 66.66667%; }
+.row .pull-8        { right: 66.66667%; }
+.row .push-9        { left: 75%; }
+.row .pull-9        { right: 75%; }
+.row .push-10       { left: 83.33333%; }
+.row .pull-10       { right: 83.33333%; }
+.row .push-11       { left: 91.66666%; }
+.row .pull-11       { right: 91.66666%; }
+.row .push-12       { left: 100%; }
+.row .pull-12       { right: 100%; }
+
+
+p { 
+    margin: 0 0 30px 0;
+    /* top right bottom left    */
+}
+p img {
+    margin: 0;
+}
+p.lead 
+
+
+
+
+
+
+
+/* mobile wide/smaller tablets ONLY
+------------------------------------- */
+@media only screen and (max-width: 767px){
+    .row {
+        width: 460px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .column, .columns {
+        width: auto !important;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 30px;
+        /* 
+        padding: top right bottom left;
+         */
+    }
+
+}
