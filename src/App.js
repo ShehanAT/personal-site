@@ -1,8 +1,9 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Header from "./components/header";
 import About from "./components/about";
 import Resume from "./components/resume";
+// import "../public/favicon.ico";
 
 function App() {
   return (

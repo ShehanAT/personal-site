@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
+import profilePic from "../../public/images/profilePic.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
@@ -52,7 +52,7 @@ export default class About extends Component {
             {/*  */}
           </div>
           <div className="three columns ">
-            <img className="profile-pic" src={logo} alt="" />
+            <img className="profile-pic" src={profilePic} alt="" />
           </div>
         </div>
       </section>

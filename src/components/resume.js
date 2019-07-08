@@ -10,12 +10,14 @@ export default class Resume extends Component {
               <span>Education</span>
             </h1>
           </div>
-          <div className="twelve columns main-col">
-            <div className="row item">
+          <section className="centered education__cards">
+            <article className="education__card">
+              {" "}
+              {/* card 1 start */}{" "}
               {/* for dead center positioning use "twelve columns" className     */}
-              <div className="twelve columns">
-                <h3 className="thirteen columns">University of Windsor</h3>
-                <p className="info thirteen columns">
+              <div className="">
+                <h3 className="">University of Windsor</h3>
+                <p className="">
                   Bachelor of Computer Science<span>&bull;</span>{" "}
                   <em className="date">May 2020</em>
                 </p>
@@ -23,11 +25,12 @@ export default class Resume extends Component {
                   <li>In-Course scholarship for maintaining GPA over 3.1</li>
                 </ul>
               </div>
-            </div>
-            <div className="row item">
-              <div className="twelve columns">
-                <h3 className="thirteen columns">Team Treehouse</h3>
-                <p className="info thirteen columns">
+            </article>{" "}
+            {/* card 1 end */}
+            <article className="education__card">
+              <div className=" ">
+                <h3 className=" ">Team Treehouse</h3>
+                <p className="  ">
                   FullStack Javascript Techdegree<span>&bull;</span>{" "}
                   <em className="date">June 2019</em>
                 </p>
@@ -46,11 +49,11 @@ export default class Resume extends Component {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="row item">
-              <div className="twelve columns">
-                <h3 className="thirteen columns">FreeCodeCamp</h3>
-                <p className="info thirteen columns">
+            </article>
+            <article className="education__card">
+              <div className=" ">
+                <h3 className=" ">FreeCodeCamp</h3>
+                <p className="  ">
                   Front End Certification<span>&bull;</span>{" "}
                   <em className="date">August 2017</em>
                 </p>
@@ -67,10 +70,9 @@ export default class Resume extends Component {
                   </li>
                 </ul>
               </div>
-            </div>
-
+            </article>
             {/* item end */}
-          </div>{" "}
+          </section>{" "}
           {/*  main-col end */}
         </div>{" "}
         {/* end education */}
