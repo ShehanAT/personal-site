@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import logo from "../logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
+
 export default class About extends Component {
   render() {
     return (
-      <section className="about">
+      <section className="about" id="about">
         <div className="row">
-          <div className="three columns">
-            <img className="profile-pic" src={logo} alt="" />
-          </div>
           <div className="nine columns main-col">
             <h2>About Me</h2>
             <p>
@@ -43,12 +43,16 @@ export default class About extends Component {
               <div className="columns download">
                 <p>
                   <a href="#" className="button">
-                    <i className="fa fa-amazon" />
+                    <FontAwesomeIcon icon={faFileDownload} />
                     Download My Resume
                   </a>
                 </p>
               </div>
             </div>
+            {/*  */}
+          </div>
+          <div className="three columns ">
+            <img className="profile-pic" src={logo} alt="" />
           </div>
         </div>
       </section>

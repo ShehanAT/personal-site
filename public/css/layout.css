@@ -19,6 +19,10 @@ body{
     background: #f3efef; 
 }
 
+
+
+
+
 /*
 b. Header Styles 
 */
@@ -63,6 +67,41 @@ header .banner-text h3{
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
 }
 
+/* DOM element heirarchy: element > padding > border > margin > position              */
+/* negative margin-left moves element to the left, 
+   negative margin-top moves element to top
+   negative margin-right moves element to left
+   negative margin-bottom moves element to top 
+  */
+
+header .scrolldown a {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -29px;
+    color: #fff;
+    display: block;
+    height: 36px;
+    width: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    border-radius: 100%;
+    
+    /* all transitions not working   */
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all 3s ease-in-out;
+   
+ 
+}
+header .scrolldown a:hover {
+    color: #11ABB0;
+}
+
+
+
+
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
     margin: 0;
     padding: 0;
@@ -80,7 +119,11 @@ header .banner-text h3{
     position: fixed;
     left: 0;
     top: 0;
+
 }
+
+.opaque { background-color: #333; }
+
 
 #nav-wrap > a.mobile-btn {
     display: none; /* Hiding mobile buttons */
@@ -189,6 +232,96 @@ div.three.columns {
     text-align: left;
 }
 /* ==$0 mean the last node select   */
+
+.about .download {
+    width: 58.33333%;
+    height: 114px;
+    padding-top: 6px;
+}
+
+.about .download .button {
+    margin-top: 6px;
+    background: #444;
+}
+
+.about a, .about a:visited {
+    color: #fff;
+}
+.about a:hover, .about a:focus { 
+    color: #11ABB0;
+}
+
+.about .download .button:hover {
+    background: #838C95;
+    color: #2B2B2B;
+}
+
+.about .download .button svg {
+    /* FontAwesomeIcon element is a svg element in the DOM  */
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* --------------------------------------------------------- */
+/* d. Resume Section                                       
+/* --------------------------------------------------------- */
+
+.resume{
+    background: #fff;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    overflow: hidden;
+}
+
+.resume a, .resume a:visited { color: #11ABB0; }
+.resume a:hover, .resume a:focus { color: #313131; }
+
+.resume h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    /* font-size/line height   */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ .resume h1 span {
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+    font-size:
+   
+ }
+.resume h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+}
+.resume .header-col { 
+    padding-top: 9px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    padding-top: 0px;
+
+ }
+.resume .main-col   { padding-right: 10%; }
+
+
+.education, .work {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.education .main-col ul li {
+    text-align: center;
+ 
+}
+.education .main-col .row {
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.resume .info {
+    font: 16px
+}
+
+
+
+
 
 
 

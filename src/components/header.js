@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 export default class Header extends Component {
   render() {
     return (
       <header className="header">
-        <nav id="nav-wrap">
+        <nav id="nav-wrap" className="opaque">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
@@ -47,13 +48,15 @@ export default class Header extends Component {
               {/* span is a inline element, inline elements do not start on new lines, block elements start on new lines */}
               I'm a Windsor based <span> web developer </span> creating awesome
               and usefull web applications for others.{" "}
-              <a className="smoothscroll" href="#about">
-                Click here
-              </a>{" "}
-              to learn more about me!
             </h3>
           </div>
         </div>
+
+        <p className="scrolldown">
+          <a className="smoothscroll" href="#about">
+            <FontAwesomeIcon icon={faArrowCircleDown} />
+          </a>
+        </p>
       </header>
     );
   }

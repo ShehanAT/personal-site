@@ -36,6 +36,65 @@ time, mark ,audio, video {
     
 }
 
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+ }
+
+
+
+.button,
+.button:visited,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    font: 16px/30px 'opensans-bold', sans-serif;
+       /* font: x/y stands for x=font-size, y=line-height     */
+    background: #11ABB0;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 12px 20px;
+    /*  padding: x y, x=top and bottom, y=left and right, makes the button bigger  */
+    margin-bottom: 18px;
+    /* background color applies to blue, padding and border sections, not margin of a DOM element */
+    border: none;
+    cursor: pointer;
+    height: auto;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; /* for google chrome */
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+
+}
+
+
+
+a, a:visited {
+    text-decoration: none;
+    outline: 0;
+    color: #11ABB0;
+
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+a:hover, a:focus {
+    color: #313131;
+}
+p a, p a:visited {
+    line-height: inherit;
+}
+
 
 
 .row {
@@ -77,8 +136,37 @@ time, mark ,audio, video {
 
 .row.collapsed > .column, /*applys to element with column class that are DIRECT children(meaning no middleman element) */
 .row.collapsed > .columns, 
-.column.collapsed, .columns.collapsed { 
+.column.collapsed, .columns.centered { 
+    margin: 0 auto;
+    float: none;
+}
+
+.row.collapsed > .column,
+.row.collapsed > .columns,
+.column.collapsed, .columns.collapsed {
     padding: 0;
+}
+
+/* [class*="column"] + [class*="column"]:last-child { 
+    float: right; 
+}
+[class] */
+
+/*  Miscelleneous                   */
+.remove-bottom { margin-bottom: 0 !important; }
+.half-bottom { margin-bottom: 12px !important; }
+.add-bottom { margin-bottom: 24px !important; }
+.no-border { border: none; }
+
+.text-center    { text-align: center !important; }
+.text-left      { text-align: left !important; }
+.text-right     { text-align: right !important; }
+.pull-left      { float: left !important; }
+.pull-right     { float: right !important; }
+.align-center   {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
 }
 
 
