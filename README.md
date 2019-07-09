@@ -7,5 +7,5 @@
 
 
 ### Next Steps:
-* convert css to scss, config webpack and babel, config react app to use scss instead of css
+* config react app to use scss instead of css
 * implement project showcase concept on codepen 
