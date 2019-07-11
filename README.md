@@ -7,8 +7,11 @@
 
 
 ### Next Steps:
-* config react app to use scss instead of css
-* implement project showcase concept on codepen 
+* config react app to use scss instead of css:white_check_mark:
+* implement project showcase concept on codepen:x:
+* check and fix responsiveness issues on three main media queries(640px, 960px, 1080px)
+* check and fix accessibility issues 
+* implement navbar sync with scroll, mobile hamburger navbar, fix the navbar to top of page
 
 ### CSS Notes:
 * Use em for font-size 
