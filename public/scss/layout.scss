@@ -1,3 +1,4 @@
+@import 'variables';
 /*
 Table of Contents:
 a. General Styles
@@ -16,7 +17,7 @@ a. General Styles
 */
 
 body {
-    background: #f3efef;
+    background: $light2-color;
   }
   
   /*
@@ -159,7 +160,7 @@ body {
   */
   
   .about {
-    background: #f3efef;
+    background: $light2-color;
     padding-top: 96px;
     padding-bottom: 66px;
     overflow: hidden;
@@ -248,125 +249,3 @@ body {
   
   /* ==$0 mean the last node select   */
   
-  /* --------------------------------------------------------- */
-  /* d. Resume Section                                       
-  /* --------------------------------------------------------- */
-  
-  .resume {
-    background: #fff;
-    padding-top: 90px;
-    padding-bottom: 72px;
-    overflow: hidden;
-    a {
-      color: #11ABB0;
-      &:visited {
-        color: #11ABB0;
-      }
-      &:hover, &:focus {
-        color: #313131;
-      }
-    }
-    h1 {
-      font: 18px/24px 'opensans-bold', sans-serif;
-      /* font-size/line height   */
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      span {
-        border-bottom: 3px solid #11ABB0;
-        padding-bottom: 6px;
-      }
-    }
-  }
-  
-  .education__cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .education__card {
-    flex: 0 1 calc(50% - 1em);
-    /* flex shorthand for: flex-grow flex-shrink width */
-  }
-  
-  @media screen and (min-width: 0px) {
-    .education__cards {
-      display: flex;
-      flex-wrap: wrap;
-      /* puts the card underneath each other */
-      justify-content: space-between;
-    }
-    .education__card {
-      height: 250px;
-      flex: 0 1 100%;
-      background-color: rgb(151, 148, 148);
-      background: linear-gradient(#f8f8f8, #fff);
-      box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      margin: 1.5rem;
-      /* 1em = 16px */
-      /* flex: flex-grow flex-shrink width        */
-    }
-  }
-  
-  /* ADD MEDIA FOR BETWEEN 960 AND 640 */
-  @media screen and (min-width: 640px) {
-    .education__cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .education__card {
-      height: 250px;
-      flex: 0 1 calc(30% - 1em);
-      background-color: rgb(151, 148, 148);
-      background: linear-gradient(#f8f8f8, #fff);
-      box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      margin: 1.5rem;
-    }
-  }
-  
-  @media screen and (min-width: 960px) {
-    .education__cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .education__card {
-      height: 250px;
-      flex: 0 1 calc(30% - 1em);
-      background-color: rgb(151, 148, 148);
-      background: linear-gradient(#f8f8f8, #fff);
-      box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      margin: 1.5rem;
-    }
-  }
-  
-  @media screen and (min-width: 1080px) {
-    .education__cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .education__card {
-      height: 250px;
-      flex: 0 1 calc(30% - 1em);
-      background-color: rgb(151, 148, 148);
-      background: linear-gradient(#f8f8f8, #fff);
-      box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      margin: 1.5rem;
-      /* flex: flex-grow flex-shrink width */
-    }
-  }

@@ -40,9 +40,15 @@ module.exports = ({ mode } = { mode: "production" }) => {
       module: {
         rules: [
           {
-            test: /\.jpe?g$|\.png$|\.ico$/,
-            exclude: /node_modules/,
-            loader: ["url-loader", "file-loader"]
+            test: /\.(jpg|png)$/,
+            use: [
+              {
+                loader: "url-loader",
+                options: {
+                  limit: 10000
+                }
+              }
+            ]
           },
           {
             test: /\.(js|jsx)$/,
@@ -67,7 +73,7 @@ module.exports = ({ mode } = { mode: "production" }) => {
         new HtmlWebpackPlugin({
           template: "./public/index.html"
         }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin() //allow modules to be updates without need a full refresh of the page
         /* HMR plugin is an array of plugins, which enable hot-module-reloading of our application   */
       ],
       devServer: {
