@@ -75,21 +75,21 @@ export default class Portfolio extends Component {
                   <div className="">
                     <h3>Twitter Project</h3>
                     <p>
-                      Communicates with Flickr API and Microsoft Computer Vision
-                      API to allow the user to search images on Flickr then
-                      extract any potential words contained inside.
+                      Uses OAuth to sign in user with Twitter account and shows
+                      an interface containing detailed information pertaining to
+                      the user's Twitter account.
                     </p>
                   </div>
                   <div className="tags">
-                    <div className="tag">Angular&amp;Node.js</div>
-                    <div className="tag">HTML&amp;CSS</div>
+                    <div className="tag">React&amp;Node.js</div>
                     <div className="tag">Passport&amp;OAuth</div>
-                    <div className="tag">MongoDB</div>
+                    <div className="tag">Webpack&amp;Babel</div>
+                    <div className="tag">Twitter API</div>
                   </div>
                 </article>
               </a>
               <a
-                href="https://fathomless-refuge-88305.herokuapp.com/"
+                href="https://agile-thicket-44316.herokuapp.com/"
                 className="project__card"
               >
                 <article>
