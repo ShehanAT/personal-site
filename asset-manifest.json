@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/personal-site/static/css/main.f3c2c3b4.chunk.css",
+    "main.js": "/personal-site/static/js/main.a96d0581.chunk.js",
+    "main.js.map": "/personal-site/static/js/main.a96d0581.chunk.js.map",
+    "runtime~main.js": "/personal-site/static/js/runtime~main.039145d2.js",
+    "runtime~main.js.map": "/personal-site/static/js/runtime~main.039145d2.js.map",
+    "static/js/2.c5ddfeb8.chunk.js": "/personal-site/static/js/2.c5ddfeb8.chunk.js",
+    "static/js/2.c5ddfeb8.chunk.js.map": "/personal-site/static/js/2.c5ddfeb8.chunk.js.map",
+    "index.html": "/personal-site/index.html",
+    "precache-manifest.e78e79e59c6cd082c21ff1d6bc6589c0.js": "/personal-site/precache-manifest.e78e79e59c6cd082c21ff1d6bc6589c0.js",
+    "service-worker.js": "/personal-site/service-worker.js",
+    "static/css/main.f3c2c3b4.chunk.css.map": "/personal-site/static/css/main.f3c2c3b4.chunk.css.map",
+    "static/media/ocrCapstone.png": "/personal-site/static/media/ocrCapstone.9f5bb043.png",
+    "static/media/profilePic.png": "/personal-site/static/media/profilePic.7f635028.png",
+    "static/media/reactImageGallery.png": "/personal-site/static/media/reactImageGallery.c571e0db.png",
+    "static/media/layout.scss": "/personal-site/static/media/sampleHeader.bb25e659.jpg",
+    "static/media/twitterInterface.jpg": "/personal-site/static/media/twitterInterface.f8eac5e9.jpg"
+  }
+}
