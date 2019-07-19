@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*  node_modules = ~                        */
+/* Tree-Shaking = context used for describing dead code elimination  */
+/* A side effect is defined as code that performs a special behaviour when imported, other than exposing one or more exports.
+An example of a side effect are polyfills, which effect the global scope and usually do not provide an export */   
+/* A polyfill or , polyfiller is a piece of code(or plugin) that provides the technology that you, the developer, expect the brower to provide natively. Flattening the API landscape if you will 
+basically it implements features on browsers that do not support said feature out of the box */
+/* examples of es2015 modules syntax: import and export   */
